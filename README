@@ -34,3 +34,12 @@ wordcompletion		Word completion using the completion framework.
 synctex			SyncTeX synchronization of TeX files and PDF output.
 
 all			All of the above plugins
+
+Dependencies
+============
+
+You will need to have at least the following packages (not included in build-essential)
+installed to build this:
+
+libgtk2.0-dev libmateconf-dev autogen shtool libtool libgtksourceview2.0-dev
+python-gtk2-dev (if you want the Python plugins, which is most of them)
