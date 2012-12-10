@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/utils.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_DH_INSTALL_ARGS += --list-missing
+
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
+DEB_CONFIGURE_EXTRA_FLAGS += --with-plugins=all --enable-python
+
+DEB_PYTHON2_MODULE_PACKAGE := mate-text-editor-plugins
+
+clean::
+	plugins_desc_script="/^ @PLUGINS_DESCRIPTION@\$$/ c \\$$(find . -iname \*.desktop.in.in | while read f; do cat $$f | awk -f debian/desktop2description.awk; done | sed 's/.*/  &\\/'; echo " ")"; \
+		sed \
+			-e "$$plugins_desc_script" \
+			debian/control.in > debian/control
+
+binary-install/mate-text-editor-plugins::
+	dh_python2 -p$(cdbs_curpkg) /usr/lib/pluma/plugins
+	dh_python2 -p$(cdbs_curpkg) /usr/share/pluma/plugins
+	find debian/$(cdbs_curpkg) -name '*.la' -delete

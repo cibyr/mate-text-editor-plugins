@@ -1,0 +1,3 @@
+version=3
+
+https://github.com/cibyr/mate-text-editor-plugins/tags .*/(\d[\d\.]+)\.tar\.gz

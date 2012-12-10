@@ -1,0 +1,52 @@
+Source: mate-text-editor-plugins
+Section: mate
+Priority: optional
+Maintainer: Ian Cullinan <cibyr@cibyr.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: https://github.com/cygwinports/mate-text-editor-plugins
+Build-Depends: cdbs (>= 0.4.90~),
+			   debhelper (>= 8),
+			   autoconf,
+               automake1.9,
+ 			   autogen,
+               intltool (>= 0.35.0),
+               libglib2.0-dev (>= 2.13.0),
+               libgtk2.0-dev (>= 2.13.0),
+			   libmateconf-dev (>= 1.4.0),
+               libgtksourceview2.0-dev (>= 2.9.1),
+               libvte-2.90-dev,
+               mate-text-editor (>= 1.4.0),
+               python (>= 2.6.6-3~),
+			   python-gtk2-dev (>= 2.12.0),
+               python-dbus (>= 0.83.1)
+Vcs-Git: git://github.com/cibyr/mate-text-editor-plugins.git
+Vcs-Browser: http://github.com/cibyr/mate-text-editor-plugins
+
+Package: mate-text-editor-plugins
+Architecture: any
+Depends: ${shlibs:Depends},
+		 ${misc:Depends},
+         ${python:Depends},
+         mate-text-editor (>= 1.4.0)
+Description: set of plugins for pluma (mate-text-editor)
+ mate-text-editor-plugins contain a set of plugins for pluma, MATE's text editor.
+ .
+ The following plugins are included:
+  * Character Map: Insert special characters just by clicking on them.
+  * Tag list: Provides a method to easily insert commonly used tags/strings into a document without having to type them.
+  * Bookmarks: Easy document navigation with bookmarks
+  * Session Saver: Save and restore your working sessions
+  * Color Picker: Pick a color from a dialog and insert its hexadecimal representation.
+  * Dashboard: A Dashboard for new tabs
+  * Smart Spaces: Forget you're not using tabulations.
+  * Bracket Completion: Automatically adds closing brackets.
+  * Word Completion: Word completion using the completion framework
+  * SyncTeX: Synchronize between LaTeX and PDF with gedit and evince.
+  * Embedded Terminal: Embed a terminal in the bottom pane.
+  * Draw Spaces: Draw Spaces and Tabs
+  * Commander: Command line interface for advanced editing
+  * Join/Split Lines: Join several lines or split long ones
+  * Text Size: Easily increase and decrease the text size
+  * Code comment: Comment out or uncomment a selected block of code.
+  * Multi Edit: Edit document in multiple places at once
