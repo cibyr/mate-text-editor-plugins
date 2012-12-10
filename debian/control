@@ -2,7 +2,6 @@ Source: mate-text-editor-plugins
 Section: mate
 Priority: optional
 Maintainer: Ian Cullinan <cibyr@cibyr.com>
-Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
 Homepage: https://github.com/cygwinports/mate-text-editor-plugins
 Build-Depends: cdbs (>= 0.4.90~),
@@ -33,20 +32,20 @@ Description: set of plugins for pluma (mate-text-editor)
  mate-text-editor-plugins contain a set of plugins for pluma, MATE's text editor.
  .
  The following plugins are included:
-  * Character Map: Insert special characters just by clicking on them.
-  * Tag list: Provides a method to easily insert commonly used tags/strings into a document without having to type them.
-  * Bookmarks: Easy document navigation with bookmarks
-  * Session Saver: Save and restore your working sessions
-  * Color Picker: Pick a color from a dialog and insert its hexadecimal representation.
-  * Dashboard: A Dashboard for new tabs
-  * Smart Spaces: Forget you're not using tabulations.
-  * Bracket Completion: Automatically adds closing brackets.
-  * Word Completion: Word completion using the completion framework
-  * SyncTeX: Synchronize between LaTeX and PDF with gedit and evince.
-  * Embedded Terminal: Embed a terminal in the bottom pane.
-  * Draw Spaces: Draw Spaces and Tabs
-  * Commander: Command line interface for advanced editing
-  * Join/Split Lines: Join several lines or split long ones
   * Text Size: Easily increase and decrease the text size
+  * Show/Hide Tabbar: Add a menu entry to show/hide the tabbar.
+  * Bracket Completion: Automatically adds closing brackets.
+  * Draw Spaces: Draw Spaces and Tabs
+  * Join/Split Lines: Join several lines or split long ones
+  * Embedded Terminal: Embed a terminal in the bottom pane.
+  * Color Picker: Pick a color from a dialog and insert its hexadecimal representation.
   * Code comment: Comment out or uncomment a selected block of code.
+  * Commander: Command line interface for advanced editing
   * Multi Edit: Edit document in multiple places at once
+  * Character Map: Insert special characters just by clicking on them.
+  * Session Saver: Save and restore your working sessions
+  * Word Completion: Word completion using the completion framework
+  * Bookmarks: Easy document navigation with bookmarks
+  * SyncTeX: Synchronize between LaTeX and PDF with pluma and atril.
+  * Smart Spaces: Forget you're not using tabulations.
+ 

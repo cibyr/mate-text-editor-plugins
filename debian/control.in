@@ -1,6 +1,7 @@
+Source: mate-text-editor-plugins
+Section: mate
 Priority: optional
 Maintainer: Ian Cullinan <cibyr@cibyr.com>
-Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
 Homepage: https://github.com/cygwinports/mate-text-editor-plugins
 Build-Depends: cdbs (>= 0.4.90~),
